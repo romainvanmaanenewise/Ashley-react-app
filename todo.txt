@@ -1,0 +1,20 @@
+#staps i wane do in this ai app
+
+1 if username already in database welcome him back
+    1.5 adding authentication later
+2 Fade fom route home to route createself where the client get to choose the ai name
+    2.5 if user did not create a name yet also go here else skip this step
+3 Create base interface split into 3 components
+    3.1 top right corner there well be a profile pic for self
+    3.2 at the bottem there will be ee text erea where questiong can be asked
+    3.3 center will hold all the chat content
+4 increase Capabilty 
+    4.1 by traking questions the client makes
+    4.2 giving self 4 answers to base questions
+    4.3 create random answer pick for base questions and track how many times this answer was picked to increase give same answer to client.
+    4.4 add 4 axis mood selection to self(Happy,Sad,Calm,Angry);
+    4.5 create point system to increase change on picking base answer depending on moood score
+
+5 add a grammer checker to self to track my mistakes
+
+
