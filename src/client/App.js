@@ -12,7 +12,7 @@ function App() {
         <div className="App-content container">
           <div className="row">
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
                 <CreateUser />
               </Route>
             </Switch>

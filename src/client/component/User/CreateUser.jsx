@@ -3,19 +3,11 @@ import './CreateUser.scss'
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    const object = {
-        name: e.target[0].value
-    }
-    fetch('http://localhost:3000/api/client/createclient' ,{
-        method: "POST",
-        headers: { "Content-Type" : "application/json", "Access-Control-Request-Headers" : "*"},
-        body: JSON.stringify(object)
-    }).then(res => res.json()
-    .then(result => {
-        //
-    }));
+    let clientName = e.target[0].value
+    const resultOfRequestCreateClient = await requestCreationClient(clientName);
+    console.log(resultOfRequestCreateClient);
 }
 
 const CreateUser = () => {
@@ -39,6 +31,18 @@ const CreateUser = () => {
             </form>
         </div>
     )
+}
+
+async function requestCreationClient(name){
+    const object = {
+        name: name
+    }
+    const sendRequestCreationClient = await fetch('http://localhost:3000/api/client/createclient' ,{
+        method: "POST",
+        headers: { "Content-Type" : "application/json", "Access-Control-Request-Headers" : "*"},
+        body: JSON.stringify(object)
+    });
+    return sendRequestCreationClient.text();
 }
 
 export default CreateUser
