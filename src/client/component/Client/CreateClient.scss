@@ -11,12 +11,12 @@
         font-size: 20px;
     }
     .user-name-input:focus,
-    .btn-user-name:focus{
+    .btn-client-name:focus{
         border-color: inherit;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .btn-user-name{
+    .btn-client-name{
         border: none !important;
         border-bottom: 2px solid white !important;
         background-color: #282c34 !important;
@@ -24,7 +24,7 @@
         border-radius: 0 !important;
         font-size: 20px;
     }
-    .btn-user-name:hover{
+    .btn-client-name:hover{
         color: #16a085 !important;
     }
 }

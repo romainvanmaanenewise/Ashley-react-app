@@ -1,5 +1,5 @@
 import './App.css';
-import CreateUser from './component/User/CreateUser';
+import CreateClient from './component/Client/CreateClient';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './global'
@@ -13,7 +13,7 @@ function App() {
           <div className="row">
             <Switch>
               <Route exact path="/">
-                <CreateUser />
+                <CreateClient />
               </Route>
             </Switch>
           </div>
